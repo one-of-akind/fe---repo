@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var resIcon = L.icon({
-        iconUrl: 'res-icon.jpg',
+        iconUrl: 'res-icon.png',
         iconSize:     [36, 36]
     });
 
@@ -47,4 +47,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 .bindPopup('<b>Bạn đang ở đây!</b>').openPopup();
         });
     }
+
 });
