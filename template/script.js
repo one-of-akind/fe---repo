@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const map = L.map('map').setView([10.7769, 106.7009], 13);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
@@ -47,5 +47,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 .bindPopup('<b>Bạn đang ở đây!</b>').openPopup();
         });
     }
-
 });
